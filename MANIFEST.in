@@ -1,0 +1,15 @@
+include setup.py
+include conftest.py
+graft docs
+graft tests
+prune  tests/__pycache__
+global-exclude *.pyc
+global-exclude *.pyo
+recursive-include flask_jqueryuibootstrap/static *
+recursive-include flask_jqueryuibootstrap/templates *.html
+include VERSION
+include DESCRIPTION
+include HISTORY.rst
+include README.rst
+include requirements.txt
+include *.py

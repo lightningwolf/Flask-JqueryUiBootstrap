@@ -1,0 +1,9 @@
+*.py[co]
+**~
+.coverage
+.installed.cfg
+.tox
+.cache/
+flask_lw_admin_smp.egg-info/
+
+/.idea/
