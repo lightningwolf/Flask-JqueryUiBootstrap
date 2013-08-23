@@ -4,10 +4,9 @@ from __future__ import with_statement, division, absolute_import
 
 
 try:
-    from setuptools import setup, Command, find_packages
+    from setuptools import setup, Command
 except ImportError:
     from distutils.core import setup, Command
-    from findpackages import find_packages
 
 
 def get_version():
@@ -25,7 +24,6 @@ def get_description():
 def main():
     __version__ = get_version()
     __description__ = get_description()
-    __packages__ = find_packages()
 
     setup(
         name='Flask-JqueryUiBootstrap',
@@ -36,7 +34,7 @@ def main():
         long_description=open('README.rst').read() + '\n\n' + open('HISTORY.rst').read(),
         license="MIT",
         url="http://lightningwolf.net/flask-lw-admin",
-        packages=__packages__,
+        packages=['flask_jqueryuibootstrap'],
         zip_safe=False,
         include_package_data=True,
         platforms=['any'],
