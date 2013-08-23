@@ -4,6 +4,6 @@
 .installed.cfg
 .tox
 .cache/
-flask_lw_admin_smp.egg-info/
+Flask_JqueryUiBootstrap.egg-info/
 
 /.idea/
