@@ -22,16 +22,10 @@ def get_description():
         return f.read()
 
 
-def get_requirements():
-    with open("requirements.txt") as f:
-        return [line.strip() for line in f]
-
-
 def main():
     __version__ = get_version()
     __description__ = get_description()
     __packages__ = find_packages()
-    __requirements__ = get_requirements()
 
     setup(
         name='Flask-JqueryUiBootstrap',
