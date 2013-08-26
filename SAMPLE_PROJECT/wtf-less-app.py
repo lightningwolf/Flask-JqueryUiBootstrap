@@ -6,7 +6,6 @@ from flask.ext.jqueryuibootstrap import Bootstrap
 
 app = Flask(__name__)
 Bootstrap(app)
-# app.config['BOOTSTRAP_USE_CDN'] = True
 
 
 @app.route('/')
