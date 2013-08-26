@@ -2,8 +2,8 @@
 Flask-JqueryUiBootstrap
 =======================
 
-Flask Lightningwolf Admin
--------------------------
+Flask jQuery Ui Bootsrap Admin
+------------------------------
 
 
 http://addyosmani.github.io/jquery-ui-bootstrap/index.html
