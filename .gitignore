@@ -1,9 +1,9 @@
+*.egg
+*.egg-info
 *.py[co]
 **~
+.cache
 .coverage
 .installed.cfg
 .tox
-.cache/
-Flask_JqueryUiBootstrap.egg-info/
-
-/.idea/
+.idea
