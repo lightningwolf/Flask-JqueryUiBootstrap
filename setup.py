@@ -33,7 +33,7 @@ def main():
         description=__description__,
         long_description=open('README.rst').read() + '\n\n' + open('HISTORY.rst').read(),
         license="MIT",
-        url="http://lightningwolf.net/flask-jqueryuibootstrap",
+        url="https://github.com/lightningwolf/Flask-JqueryUiBootstrap",
         packages=['flask_jqueryuibootstrap'],
         zip_safe=False,
         include_package_data=True,
