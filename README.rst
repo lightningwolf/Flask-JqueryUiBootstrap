@@ -41,7 +41,7 @@ An example ``base.html``::
   {% import "jqueryuibootstrap_wtf.html" as wtf %}
 
 Forms
-~~~~~
++++++
 
 The ``jqueryuibootstrap_wtf`` template contains macros to help you output forms
 quickly. The most basic way is using them as an aid to create a form by hand::
@@ -110,3 +110,12 @@ FAQ
        <script src="my_app_code.js">
      {% endblock %}
 
+Contribute
+----------
+
+#. We are open for any help.
+#. Fork `the repository`_ on GitHub to start making your changes to the **master** branch (or branch off of it).
+#. Write a test which shows that the bug was fixed or that the feature works as expected.
+#. Send a pull request and bug the maintainer until it gets merged and published. :) Make sure to add yourself to AUTHORS_.
+
+.. _`the repository`: https://github.com/lightningwolf/Flask-JqueryUiBootstrap
