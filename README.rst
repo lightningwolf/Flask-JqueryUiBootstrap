@@ -119,3 +119,4 @@ Contribute
 #. Send a pull request and bug the maintainer until it gets merged and published. :) Make sure to add yourself to AUTHORS_.
 
 .. _`the repository`: https://github.com/lightningwolf/Flask-JqueryUiBootstrap
+.. _AUTHORS: https://github.com/lightningwolf/Flask-JqueryUiBootstrap/blob/master/AUTHORS.rst
