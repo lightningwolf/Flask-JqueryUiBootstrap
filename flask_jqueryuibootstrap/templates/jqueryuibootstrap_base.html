@@ -12,14 +12,14 @@
     {%- endblock meta %}
 
     {%- block style %}
-    <link href="{{ url_for('bootstrap.static', filename='assets/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('bootstrap.static', filename='css/jquery-ui-1.10.0.custom.css') }}">
-    <link rel="stylesheet" href="{{ url_for('bootstrap.static', filename='assets/css/font-awesome.min.css') }}">
+    <link href="{{ url_for('jquery_ui_bootstrap.static', filename='assets/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('jquery_ui_bootstrap.static', filename='css/jquery-ui-1.10.0.custom.css') }}">
+    <link rel="stylesheet" href="{{ url_for('jquery_ui_bootstrap.static', filename='assets/css/font-awesome.min.css') }}">
     <!--[if IE 7]>
-    <link rel="stylesheet" href="{{ url_for('bootstrap.static', filename='assets/css/font-awesome-ie7.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('jquery_ui_bootstrap.static', filename='assets/css/font-awesome-ie7.min.css') }}">
     <![endif]-->
     <!--[if lt IE 9]>
-    <link rel="stylesheet" href="{{ url_for('bootstrap.static', filename='css/jquery.ui.1.10.3.ie.css') }}">
+    <link rel="stylesheet" href="{{ url_for('jquery_ui_bootstrap.static', filename='css/jquery.ui.1.10.3.ie.css') }}">
     <![endif]-->
     {%- block style_navbar_padding %}
     <style>
@@ -40,11 +40,11 @@
     {%- endif %}
 
     {%- block favicons %}
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ url_for('bootstrap.static', filename='assets/ico/apple-touch-icon-144-precomposed.png') }}">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ url_for('bootstrap.static', filename='assets/ico/apple-touch-icon-114-precomposed.png') }}">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ url_for('bootstrap.static', filename='assets/ico/apple-touch-icon-72-precomposed.png') }}">
-    <link rel="apple-touch-icon-precomposed" href="{{ url_for('bootstrap.static', filename='assets/ico/apple-touch-icon-57-precomposed.png') }}">
-    <link rel="shortcut icon" href="{{ url_for('bootstrap.static', filename='assets/ico/favicon.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ url_for('jquery_ui_bootstrap.static', filename='assets/ico/apple-touch-icon-144-precomposed.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ url_for('jquery_ui_bootstrap.static', filename='assets/ico/apple-touch-icon-114-precomposed.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ url_for('jquery_ui_bootstrap.static', filename='assets/ico/apple-touch-icon-72-precomposed.png') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ url_for('jquery_ui_bootstrap.static', filename='assets/ico/apple-touch-icon-57-precomposed.png') }}">
+    <link rel="shortcut icon" href="{{ url_for('jquery_ui_bootstrap.static', filename='assets/ico/favicon.png') }}">
     {%- endblock favicons %}
 
   {%- endblock head %}
@@ -55,9 +55,9 @@
     {%- block body_content %}
     {%- endblock body_content %}
     {%- block bootstrap_js_bottom %}
-    <script src="{{ url_for('bootstrap.static', filename='assets/js/jquery-1.9.0.min.js') }}"></script>
-    <script src="{{ url_for('bootstrap.static', filename='assets/js/bootstrap.min.js') }}"></script>
-    <script src="{{ url_for('bootstrap.static', filename='assets/js/jquery-ui-1.10.0.custom.min.js') }}"></script>
+    <script src="{{ url_for('jquery_ui_bootstrap.static', filename='assets/js/jquery-1.9.0.min.js') }}"></script>
+    <script src="{{ url_for('jquery_ui_bootstrap.static', filename='assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('jquery_ui_bootstrap.static', filename='assets/js/jquery-ui-1.10.0.custom.min.js') }}"></script>
     {%- endblock bootstrap_js_bottom %}
 
     {%- if config['BOOTSTRAP_GOOGLE_ANALYTICS_ACCOUNT'] %}

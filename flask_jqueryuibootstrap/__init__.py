@@ -13,7 +13,7 @@ else:
         return isinstance(field, HiddenField)
 
 
-class Bootstrap(object):
+class JqueryUiBootstrap(object):
     def __init__(self, app=None):
         if app is not None:
             self.init_app(app)
@@ -23,11 +23,11 @@ class Bootstrap(object):
         app.config.setdefault('BOOTSTRAP_GOOGLE_ANALYTICS_ACCOUNT', None)
 
         blueprint = Blueprint(
-            'bootstrap',
+            'jquery_ui_bootstrap',
             __name__,
             template_folder='templates',
             static_folder='static',
-            static_url_path=app.static_url_path + '/bootstrap')
+            static_url_path=app.static_url_path + '/jquery_ui_bootstrap')
 
         app.register_blueprint(blueprint)
 

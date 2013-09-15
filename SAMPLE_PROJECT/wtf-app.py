@@ -2,7 +2,7 @@
 # coding=utf8
 
 from flask import Flask, render_template
-from flask.ext.jqueryuibootstrap import Bootstrap
+from flask.ext.jqueryuibootstrap import JqueryUiBootstrap
 from flask.ext.wtf import (
     Form, 
     RecaptchaField,
@@ -17,7 +17,7 @@ from wtforms.validators import (
     )
 
 app = Flask(__name__)
-Bootstrap(app)
+JqueryUiBootstrap(app)
 
 app.config['SECRET_KEY'] = 'devkey'
 app.config['RECAPTCHA_PUBLIC_KEY'] = '6Lfol9cSAAAAADAkodaYl9wvQCwBMr3qGR_PPHcw'
