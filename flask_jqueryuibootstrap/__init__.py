@@ -1,16 +1,18 @@
 #!/usr/bin/env python
 # coding=utf8
-
-from flask import Blueprint, current_app, url_for
+from flask import Blueprint
 
 try:
     from wtforms.fields import HiddenField
-except ImportError:
-    def is_hidden_field_filter(field):
-        raise RuntimeError('WTForms is not installed.')
-else:
+
     def is_hidden_field_filter(field):
         return isinstance(field, HiddenField)
+except ImportError:
+    def HiddenField():
+        pass
+
+    def is_hidden_field_filter(field):
+        raise RuntimeError('WTForms is not installed.')
 
 
 class JqueryUiBootstrap(object):
